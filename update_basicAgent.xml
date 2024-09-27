@@ -18,5 +18,8 @@
         <Source Channel="Application" Enabled="true" />
         <Source Channel="System" Enabled="true" />
         <Source Channel="Security" Enabled="true" />
+        <Source Name="DHCP Logs" Type="WindowsDHCP" >
+            <Parameter name="RootDirectory" value="C:\Windows\System32\DHCP" />
+        </Source>           
     </Update>
 </WinCollectScript>

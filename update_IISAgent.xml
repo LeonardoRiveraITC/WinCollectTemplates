@@ -18,8 +18,9 @@
         <Source Channel="Application" Enabled="true" />
         <Source Channel="System" Enabled="true" />
         <Source Channel="Security" Enabled="true" />
-        <Source Name="DHCP Logs" Type="WindowsDHCP" >
-            <Parameter name="RootDirectory" value="C:\Windows\System32\DHCP" />
-        </Source>           
+		<Source Name="iis test" Type="MSIIS" >
+			<Parameter name="Protocol.FTP" value="true" />
+			<Parameter name="Protocol.SMTP" value="true" />
+		</Source>        
     </Update>
 </WinCollectScript>
